@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "postgres",
+   "database": "tm85-users",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "/src/entidades/**/*.ts"
+   ],
+   "migrations": [
+      "/src/migraciones/**/*.ts"
+   ],
+   "subscribers": [
+      "/src/suscripciones/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "/src/entidades",
+      "migrationsDir": "/src/migraciones",
+      "subscribersDir": "/src/suscripciones"
+   }
+}
